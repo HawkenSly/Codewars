@@ -11,25 +11,25 @@
 // "ATTGC" --> "TAACG"
 // "GTAT" --> "CATA"
 
-function DNAStrand(dna){
+function DNAStrand(dna) {
   function swap(str) {
-   let swapped = '';
-   for (let i = 0; i < str.length; i++)
-     switch (dna[i]) {
-         case 'A':
-           swapped += 'T';
-           break;
-         case 'T':
-           swapped += 'A';
-           break;
-         case 'C':
-           swapped += 'G';
-           break;
-         case 'G':
-           swapped += 'C';
-           break;
-     }
+    let swapped = '';
+    for (let i = 0; i < str.length; i++)
+      switch (dna[i]) {
+        case 'A':
+          swapped += 'T';
+          break;
+        case 'T':
+          swapped += 'A';
+          break;
+        case 'C':
+          swapped += 'G';
+          break;
+        case 'G':
+          swapped += 'C';
+          break;
+      }
     return swapped;
- }
- return swap(dna);
+  }
+  return swap(dna);
 }
